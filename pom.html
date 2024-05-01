@@ -1,0 +1,45 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- file calls -->
+    <link rel="stylesheet" href="pom.css" />
+    <script src="pom.js" defer></script>
+     <!-- file calls -->
+    <title>Pomodoro Timer</title>
+  </head>
+<!-- HEAD -->
+
+  <header class="header">
+      <!-- Your header content goes here -->
+  </header>
+
+
+  <!-- BODY -->
+
+    <!-- CONTAINER -->
+    <div class="timer container">
+      <div class="timer__controls">
+        <button data-time="20" class="button timer__button">20 Seconds</button>
+        <button data-time="300" class="button timer__button">5 Min Break</button>
+        <button data-time="600" class="button timer__button">10 Min Break</button>
+        <button data-time="1500" class="button timer__button">Pomodoro</button>
+        <form name="customForm" id="custom">
+          <input type="text" name="minutes" placeholder="CUSTOM: Enter minutes" />
+        </form>
+      </div>
+      <div class="display">
+        <h1 class="display__time-left"></h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+  </body>
+   <!-- BODY -->
+  
+</html>
+<!-- HTML -->

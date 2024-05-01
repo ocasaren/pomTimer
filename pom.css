@@ -1,0 +1,116 @@
+/* CSS */
+.header {
+  background-image: url('prods.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2in 2in;
+  text-align: center;
+  padding: 100px 0; /* Adjust padding as needed */
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Monospace, sans-serif;
+    color: #39FF14;
+  background: linear-gradient(#000, #000329, #000040, #ff00a0, #c82927, #f36815, #ff00a0, #A24EFF, #5D00FF, #000040, #0b0c0b, #0f0b16, #000, #000);
+    background-size: 200% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+@keyframes gradientBG {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
+
+.button {
+  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+  }
+
+  .timer__button {
+  background-color: transparent;
+  border: 3px solid #39FF14;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #39FF14;
+  }
+  .timer__button:hover {
+  box-shadow: 0 0 20px 0 #39FF14 inset, 0 0 20px 5px #39FF14;
+  border: 3px solid #39FF14;
+  }
+
+/* Styles for the form */
+#custom {
+    margin: 0 auto; /* Center the form horizontally */
+    width: 200px; /* Set the width of the form */
+    padding: 30px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #000; /* Set the background color to black */
+}
+
+/* Style for the input field */
+#custom input[type="text"] {
+    width: 100%; /* Make the input field fill the width of the form */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    background-color: #000; /* Set the background black */
+    color: #39FF14; /* Set the text color to white */
+}
+
+/* Placeholder text color */
+#custom input[type="text"]::placeholder {
+    color: #39FF14; /* placeholder text white */
+}
+
+.display {
+  /* Other styles */
+  padding: 10px; /* Add padding to the display section */
+}
+
+.display__time-left {
+  /* Other styles */
+  padding-bottom: 10px; /* Add padding to the bottom of the time left element */
+}
+
+.display__end-time {
+  /* Other styles */
+  padding-bottom: 200px; /* Add padding to the top of the end time element */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .header {
+    padding: 70px; /* Adjust padding for smaller screens */
+    margin-bottom: 150px; /* Adjust margin for smaller screens */
+  }
+}
+
+
